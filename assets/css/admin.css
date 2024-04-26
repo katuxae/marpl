@@ -1,0 +1,64 @@
+header {
+    background: rgb(161, 207, 207);
+    height: 85px;
+}
+
+header * {
+    color: navy;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+header ul {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 7px;
+}
+
+header ul li a:hover {
+    background: rgb(252, 248, 248);
+    transition: 0.5s;
+    color: #fff;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    right: 0px;
+    width: 150px;
+    display: none;
+    z-index: 10;
+
+
+}
+
+header ul li:hover ul {
+    display: inherit;
+}
+
+header ul li ul li {
+    width: 100%;
+
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: rgb(161, 207, 207);
+    color: navy;
+}

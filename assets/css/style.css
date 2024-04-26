@@ -1,0 +1,288 @@
+* {
+    font-family: "Comfortaa", sans-serif;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: navy
+}
+
+body {
+    background: rgb(203, 235, 236);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+Header
+*/
+header {
+    background: rgb(161, 207, 207);
+    height: 85px;
+}
+
+header * {
+    color: navy;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+header ul {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 7px;
+}
+
+header ul li a:hover {
+    background: rgb(252, 248, 248);
+    transition: 0.5s;
+    color: #fff;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    right: 0px;
+    width: 150px;
+    display: none;
+    z-index: 10;
+
+
+}
+
+header ul li:hover ul {
+    display: inherit;
+}
+
+header ul li ul li {
+    width: 100%;
+
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: rgb(161, 207, 207);
+    color: navy;
+}
+
+
+
+/*
+Carousel
+*/
+.slider-title {
+    text-align: center;
+    padding: 30px 0;
+    color: navy;
+}
+
+.carousel {
+    height: 300px;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 300px;
+    border-radius: 4px;
+}
+
+.carousel-caption-hack {
+    position: absolute;
+    right: 0%;
+    bottom: 0.05rem;
+    left: 0%;
+    background-color: rgb(161, 207, 207);
+    opacity: 0.8;
+    padding-top: 1.25rem;
+    padding-bottom: 0rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-caption-hack a {
+    color: navy;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+/* catalog*/
+
+.main-content {
+    width: 70em;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 85px;
+
+
+}
+
+.card {
+
+    height: 62vh;
+    padding: 1%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(161, 207, 207);
+    border: 1px solid #000000;
+
+}
+
+/*блок новостей*/
+
+.news-content h2 {
+    margin: 30px 0;
+
+}
+
+.news-content .post {
+    margin-bottom: 20px;
+}
+
+.news-content .post_text {
+    background: rgb(161, 207, 207);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.news-content .post_text h3 a:hover {
+    text-decoration: underline;
+    color: navy;
+}
+
+/*footer*/
+.footer {
+    background: rgb(80, 166, 172);
+    color: navy;
+    position: relative;
+}
+
+.footer .section {
+    padding: 22px;
+}
+
+.footer h4,
+.footer h3 {
+    color: #fff;
+}
+
+.footer .about .contact span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .about .socials a {
+    border: 1px solid rgb(125, 125, 235);
+    width: 35px;
+    height: 31px;
+    padding-top: 2.5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+    color: navy;
+}
+
+.footer .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+
+.section .link ul a {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .contact-form .contact-input {
+    background: #46adcc;
+    color: #000000;
+    margin-bottom: 5px;
+    line-height: 30px;
+    padding: .9rem 1.4rem;
+    border: none;
+    width: 100%;
+}
+
+.footer .contact-form .contact-input:focus {
+    background: #dce1e7;
+}
+
+.footer .contact-form .contact-btn {
+    float: left;
+    font-size: 15px;
+}
+
+/*
+FORMS
+ */
+.reg_form h2 {
+    text-align: center;
+    margin: 15px 0;
+    color: white;
+    background-color: #46adcc;
+}
+
+.reg_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #5c5b5b;
+    text-decoration: underline;
+    margin-left: 60px;
+}
+
+.reg_form a:hover {
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+form div.err p {
+    color: red;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
